@@ -12,16 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final wordPair = WordPair.random();
     return MaterialApp(
-      title: 'TESTING Flutter',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter is FUN!!'),
-        ),
-        body: Center(
-          //child: Text(wordPair.asPascalCase), //Text(generateWordPairs().first.asPascalCase),
-          child: RandomWords(),
-        ),
-      ),
+        title: 'Startup Name Generator',
+        home: RandomWords(),
     );
   }
 }
